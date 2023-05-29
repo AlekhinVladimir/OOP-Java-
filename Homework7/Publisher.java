@@ -1,4 +1,4 @@
-package lesson7.observer;
+package Homework7;
 
 public interface Publisher {
 
@@ -6,6 +6,6 @@ public interface Publisher {
 
     void removeObserver(Observer observer);
 
-    void sendOffer(String nameCompany, double salary);
+    void sendOffer(String nameVacancy, String nameCompany, double salary);
 
 }

@@ -1,4 +1,4 @@
-package ru.geekbrains.lesson7.observer;
+package lesson7.observer;
 
 public class Master implements Observer {
     private  String name;

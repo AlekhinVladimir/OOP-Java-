@@ -1,3 +1,5 @@
+package Homework6.spr;
+
  public class Main {
 
 

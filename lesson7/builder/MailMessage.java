@@ -1,4 +1,4 @@
-package ru.geekbrains.lesson7.builder;
+package lesson7.builder;
 
 public class MailMessage {
 

@@ -1,10 +1,11 @@
-package lesson7.observer;
+package Homework7;
 
 /**
  * Интерфейс наблюдателя (соискателя, человек в поисках работы)
  */
 public interface Observer {
 
-    void receiveOffer(String companyName, double salary);
+    void receiveOffer(String nameVacancy, String companyName, Double salary);
+
 
 }

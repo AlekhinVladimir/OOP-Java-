@@ -1,16 +1,15 @@
-package lesson7.observer;
+package Homework7;
 
 import java.util.Random;
 
-public class Company {
+public class Company implements CreateVacancy{
 
     private Random random;
     private String nameCompany;
-    private double maxSalary;
-
+    private int maxSalary;
     private Publisher jobAgency;
 
-    public Company(String nameCompany, double maxSalary, Publisher jobAgency) {
+    public Company(String nameCompany, int maxSalary, Publisher jobAgency) {
         this.nameCompany = nameCompany;
         this.maxSalary = maxSalary;
         this.jobAgency = jobAgency;
@@ -22,9 +21,11 @@ public class Company {
      *  объект в агенство.
      * Поиск сотрудника
      */
-    public void needEmployee(){
+
+       public void needEmployee(){
+        String vac = createVacancy();
         double salary = random.nextDouble(3000, maxSalary);
-        jobAgency.sendOffer(nameCompany, salary);
+        jobAgency.sendOffer(vac, nameCompany, salary);
     }
 
 }

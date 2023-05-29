@@ -1,8 +1,6 @@
-package lesson7.observer;
-
+package Homework7;
 import java.util.ArrayList;
 import java.util.List;
-
 public class JobAgency implements Publisher {
 
     List<Observer> observers = new ArrayList<>();
@@ -24,9 +22,9 @@ public class JobAgency implements Publisher {
      * @param salary
      */
     @Override
-    public void sendOffer(String nameCompany, double salary) {
+    public void sendOffer(String nameVacancy, String nameCompany, double salary) {
         for (Observer observer : observers){
-            observer.receiveOffer(nameCompany, salary);
+            observer.receiveOffer(nameVacancy, nameCompany, salary);
         }
     }
 }

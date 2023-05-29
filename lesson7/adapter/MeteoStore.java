@@ -1,4 +1,4 @@
-package ru.geekbrains.lesson7.adapter;
+package lesson7.adapter;
 
 public class MeteoStore {
 

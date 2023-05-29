@@ -1,4 +1,4 @@
-package ru.geekbrains.lesson7.observer;
+package lesson7.observer;
 
 public class Student implements Observer {
 
